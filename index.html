@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Título de página -->
+        <title>Parcial Final MW</title>
+
+        <!-- Codificación de caracteres del texto -->
+        <meta charset="utf-8">
+
+        <!-- Meta que permite la correcta visualizacion en responsive -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <!-- Agregar ícono de favoritos -->
+        <link rel="icon" href="img/Favicon.png">
+
+       <!-- Cargar PrefixFree -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+
+        <!-- Cargar librerias de Íconos Web > Font Awesome Icons -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+       <!-- Enlace a librería de fuentes tipográficas: Google Fonts -->
+       <link rel="preconnect" href="https://fonts.gstatic.com">
+       <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+        <!-- Cargar CSS propio -->
+        <link rel="stylesheet" href="css/estilo.css">
+    </head>
+
+    <body>
+        <!-- Componente Botón WhatsApp flotante -->
+        <aside id="boton-wp">
+            <a href="https://api.whatsapp.com/send?phone=573158337338" target="_blank">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+        </aside>
+
+        <!-- Componente Menú Responsive -->
+        <aside id="menu-moviles">
+            <a href="#" id="abrir-menu">
+                <i class="fas fa-bars"></i>
+            </a>
+
+            <a href="#" id="cerrar-menu">
+                <i class="fas fa-times"></i>
+            </a>
+
+            <nav>
+                <a href="index.html">Inicio</a>
+                <a href="computadores.html">Computadores</a>
+                <a href="tabletas.html">Tabletas</a>
+            </nav>
+        </aside>
+
+        <!-- Componente Header -->
+        <header>
+            <article>
+                <figure>
+                    <a href="index.html">
+                        <img src="img/logoheader.png">
+                    </a>
+                </figure>
+				
+				<nav>
+                    <a href="index.html">Inicio</a>
+					<a href="computadores.html">Computadores</a>
+					<a href="tabletas.html">Tabletas</a>
+                </nav>
+            </article>
+        </header>
+
+        <main>
+			
+			 <!-- Componente de Slider > Slick Slider -->
+			<section id="zona-slider">
+				<article class="slick-slider">
+				<figure id="slide-01"></figure>
+				<figure id="slide-02"></figure>
+				</article>
+			</section>
+
+            <section id="bloque-categorias">
+                <nav>
+                    <a href="computadores.html" id="img-computadores">
+                        <span class="nombre-categoria">Computadores</span>
+                        <span class="capa-oscura"></span>
+                    </a>
+                    <a href="tabletas.html" id="img-tabletas">
+                        <span class="nombre-categoria">Tabletas</span>
+                        <span class="capa-oscura"></span>
+                    </a>
+                </nav>
+            </section>
+
+            <section class="bloque-productos">
+                <article>
+                    <h3>Computadores</h3>
+                    <nav>
+                        <a href="computador-basic.html">
+                            <span class="nombre-producto">Basic</span>
+                            <span class="precio-producto">$990.900</span>
+                            <img src="img/basic.jpg">
+                        </a>
+
+                        <a href="computado-pro.html">
+                            <span class="nombre-producto">Pro</span>
+                            <span class="precio-producto">$3.199.900</span>
+                            <img src="img/pro.jpg">
+                        </a>
+                    </nav>
+                </article>
+            </section>
+
+            <section class="bloque-productos">
+                <article>
+                    <h4>Tabletas</h4>
+                    <nav>
+                        <a href="tableta-small.html">
+                            <span class="nombre-producto">Small</span>
+                            <span class="precio-producto">$470.900</span>
+                            <img src="img/small.jpg">
+                        </a>
+
+                        <a href="tableta-big.html">
+                            <span class="nombre-producto">Big</span>
+                            <span class="precio-producto">$1.550.000</span>
+                            <img src="img/big.jpg">
+                        </a>
+                    </nav>
+                </article>
+            </section>
+        </main>
+
+         <!-- Componente Footer -->
+         <footer>
+            <div id="ancla-footer"></div>
+            <article>
+                <div id="superior-footer">
+                    <div class="cajas-footer">
+                        <h6>Conócenos</h6>
+
+                        <!-- Componente Botones Redes Sociales -->
+                        <nav id="links-redes">
+                            </a>
+                            <a href="#" target="_blank">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" target="_blank">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                        </nav>
+                    </div>
+                    <figure>
+						<a href="index.html">
+							<img src="img/Logo.png" width="300">
+						</a>
+					</figure>
+                </div>
+
+                <div id="inferior-footer">
+                    <p>&copy; 2021 <strong>Alejo Techs</strong>&trade;. Todos Los Derechos Reservados.</p>
+                </div>
+            </article>
+        </footer>
+
+        <!-- Zona de JavaScript -->
+
+        <!-- 1°: LLamado a jQuery desde un CDN -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	
+		<!-- 2°: Llamado a librerías hijo de jQuery -->
+		<!-- jQuery Easing desde CDN -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+	
+		<!-- LLamado a Slick Slider -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"/>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"/>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+        <!-- Cargar JS propio -->
+        <script src="js/script.js"></script>
+    </body>
+</html>

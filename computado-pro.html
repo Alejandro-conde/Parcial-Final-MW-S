@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>        <!-- Título de página -->
+        <title>Computador Pro - Alejo Techs | Tecnología Para Todos</title>
+
+        <!-- Codificación de caracteres > Caracteres especiales en Español -->
+        <meta charset="utf-8">
+        
+        <!-- Cargar ícono de favoritos -->
+        <link rel="icon" href="img/Favicon.png">
+
+        <!-- Enlace a librería desde CDN: PrefixFree -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+
+        <!-- Enlace a librería de íconos: FontAwesome Icons -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+       <!-- Enlace a librería de fuentes tipográficas: Google Fonts -->
+       <link rel="preconnect" href="https://fonts.gstatic.com">
+       <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+        <!-- Cargar CSS propio -->
+        <link rel="stylesheet" href="css/estilo.css">
+    </head>
+
+    <body>
+        <!-- Componente Botón WhatsApp flotante -->
+        <aside id="boton-wp">
+            <a href="https://api.whatsapp.com/send?phone=573158337338" target="_blank">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+        </aside>
+
+        <!-- Componente Menú Responsive -->
+        <aside id="menu-moviles">
+            <a href="#" id="abrir-menu">
+                <i class="fas fa-bars"></i>
+            </a>
+
+            <a href="#" id="cerrar-menu">
+                <i class="fas fa-times"></i>
+            </a>
+
+            <nav>
+                <a href="index.html">Inicio</a>
+                <a href="computadores.html">Computadores</a>
+                <a href="tabletas.html">Tabletas</a>
+            </nav>
+        </aside>
+
+        <!-- Componente Header -->
+        <header>
+            <article>
+                <figure>
+                    <a href="index.html">
+                        <img src="img/logoheader.png">
+                    </a>
+                </figure>
+				<nav>
+                    <a href="index.html">Inicio</a>
+					<a href="computadores.html">Computadores</a>
+					<a href="tabletas.html">Tabletas</a>
+                </nav>
+            </article>
+        </header>
+
+        <main>
+            <section id="banner-superior">
+                <article>
+                    <h1 style="font-size: xxx-large; text-align: center; padding: 15px;">Computador Pro</h1>
+                </article>
+            </section>
+
+            <!-- Componente Presentación -->
+            <section id="producto">
+                <div id="ancla_producto"></div>
+                <article>
+                    <figure>
+                        <img src="img/pro.jpg">
+                    </figure>
+
+                    <div id="info_producto">
+                        <h2>Pro</h2>
+                        <p>• Pantalla: 15.6" FHD (1920 x 1080)
+                            • Procesador: Intel Core i5-10300H
+                            • Memoria RAM: 8 GB
+                            • Almacenamiento: 512 GB SSD
+                            • Sistema operativo: Windows 10 Home
+                            • Tarjeta gráfica: Nvidia® Geforce® RTX 2060 Max-Q 6 GB
+                            • Puertos: USB, HDMI
+                            • Color: negro
+                            • Teclado con retroiluminación verde
+                            • Dimensiones: 36 x 25.6 x 2.34 cm
+                            • Peso: 2.23 kg
+                            • Batería: 3 celdas 45.5 WH
+                            
+                            • Tamaño en empaque: 30 cm x 55 cm x 7 cm
+                        </p>
+                        <h5>$3.199.900</h5>
+                        <a href="#" target="_blank">Comprar</a>
+                    </div>
+                </article>
+            </section>
+
+            <section id="bloque-categorias">
+                <nav>
+                    <a href="tabletas.html" id="img-tabletas">
+                        <span class="nombre-categoria">Tabletas</span>
+                        <span class="capa-oscura"></span>
+
+                        <a href="computadores.html" id="img-computadores">
+                            <span class="nombre-categoria">Computadores</span>
+                            <span class="capa-oscura"></span>
+                    </a>
+                </nav>
+            </section>
+        </main>
+
+        <!-- Componente Footer de 1 Columna -->
+        <footer>
+            <div id="ancla-footer"></div>
+            <article>
+                <div id="superior-footer">
+                    <div class="cajas-footer">
+                        <h6>Conóncenos</h6>
+
+                        <!-- Componente Botones Redes Sociales -->
+                        <nav id="links-redes">
+                            </a>
+                            <a href="#" target="_blank">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" target="_blank">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                        </nav>
+                    </div>
+					
+					<figure>
+						<a href="index.html">
+							<img src="img/Logo.png" width="300">
+						</a>
+					</figure>
+                </div>
+				
+
+                <div id="inferior-footer">
+                    <p>&copy; 2021 <strong>Alejo Techs</strong>&trade;. Todos Los Derechos Reservados.</p>
+                </div>
+            </article>
+        </footer>
+
+        <!-- Zona de JavaScript -->
+
+        <!-- 1°: LLamado a jQuery desde un CDN -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        
+        <!-- 2°: Llamado a librerías hijo de jQuery -->
+        <!-- jQuery Easing desde CDN -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+
+        <!-- Cargar JS propio -->
+        <script src="js/script.js"></script>
+    </body>
+</html>
